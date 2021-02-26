@@ -28,6 +28,9 @@ pub mod lifetime_tutorial {
       part: &'a str,
     }
     impl<'a> ImportantExcerpt<'a> {
+      // by elision rule,
+      // rule 1. all the parameters will have each lifetime
+      // rule 3. the method with self reference has a return life time of self.
       fn announce_and_return_part(&self, announcement: &str) -> &str {
         println!("Attention Please: {}", announcement);
         self.part
