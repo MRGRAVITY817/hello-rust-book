@@ -83,5 +83,5 @@ fn main() {
     ignorance_example::ignore_binding(s);
 
     // Ignore parts using spread
-    ignorance_example::spread_ignore(&numbers);
+    ignorance_example::spread_ignore(&numbers)
 }
